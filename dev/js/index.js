@@ -1,5 +1,9 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from "react-dom";
+import {createStore} from 'redux';
+import allReducers from './reducers';
 
-ReactDOM.render(<h1>Boom toasted</h1>, document.getElementById('root'));
+const store = createStore(allReducers);
+
+ReactDOM.render(<h1>Boom roasted</h1>, document.getElementById('root'));
